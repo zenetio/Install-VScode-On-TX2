@@ -46,7 +46,7 @@ Here are the steps I used.
 ~$ yarn --version
 ```
 
-### 5. Now clone the Microsoft VS repository
+### 5. Now clone the Microsoft VS code repository
 
 ```bash
 ~$ git clone https://github.com/microsoft/vscode
