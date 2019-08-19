@@ -57,7 +57,7 @@ Here are the steps I used.
 
 ```bash
 ~$ gedit package.json
-   "electron-mksnapshot": "2.0.0",
+   "electron-mksnapshot": "~2.0.0",
    "gulp-atom-electron": "^1.17.0",
 
 # then update test/smoke/package.json, if still not updated
