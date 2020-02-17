@@ -70,8 +70,7 @@ Here are the steps I used.
 ### 8. Launch VScode and voila!
 
 ```bash
-~$ cd
-~$ ./vscode/scripts/code.sh
+~$ ./scripts/code.sh
 ```
 
 ![install image](./figures/Screenshot1.png)
