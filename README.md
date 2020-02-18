@@ -16,13 +16,11 @@ Here are the steps I used.
 ~$ sudo apt install git libx11-dev libxkbfile-dev libsecret-1-dev fakeroot rpm libnss3 apt-transport-https
 ```
 
-### 2. Install nodejs 8.11.2
+### 2. Install nodejs 10.19
 
 ```bash
-~$ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-~$ wget https://deb.nodesource.com/setup_8.x
-~$ sudo bash setup_8.x
-~$ sudo apt-get install -y nodejs
+~$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+~$ sudo apt install -y nodejs
 
 # Check if nodejs installation is ok using the command
 ~$ nodejs -v
@@ -31,7 +29,7 @@ Here are the steps I used.
 ### 3. Maybe you need some additional addons: gcc, g++, make
 
 ```bash
-~$ sudo apt-get install gcc g++ make
+~$ sudo apt install gcc g++ make
 ```
 
 ### 4. Install Yarn package manager
@@ -39,8 +37,8 @@ Here are the steps I used.
 ```bash
 ~$ curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 ~$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-~$ sudo apt-get update
-~$ sudo apt-get install yarn
+~$ sudo apt update
+~$ sudo apt install yarn
 
 # check if yarn installation is ok using the command
 ~$ yarn --version
@@ -53,25 +51,13 @@ Here are the steps I used.
 ~$ cd vscode
 ```
 
-### 6. Update package.json file, if still not updated
-
-```bash
-~$ gedit package.json
-   "electron-mksnapshot": "~2.0.0",
-   "gulp-atom-electron": "^1.17.0",
-
-# then update test/smoke/package.json, if still not updated
-~$ gedit test/smoke/package.json
-    "electron": "2.0.0",
-```
-
-### 7. Install dependencies using yarn tool
+### 6. Install dependencies using yarn tool
 
 ```bash
 ~$ yarn
 ```
 
-### 8. Now build vscode
+### 7. Now build vscode
 
 ```bash
 ~$ yarn run watch
@@ -81,11 +67,10 @@ Here are the steps I used.
 
 ![install image](./figures/Screenshot2.png)
 
-### 9. Launch VScode and voila!
+### 8. Launch VScode and voila!
 
 ```bash
-~$ cd
-~$ ./vscode/scripts/code.sh
+~$ ./scripts/code.sh
 ```
 
 ![install image](./figures/Screenshot1.png)
